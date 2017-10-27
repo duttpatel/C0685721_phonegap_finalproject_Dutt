@@ -1,0 +1,45 @@
+<html>
+    <head>
+<script type='text/javascript'src='http://code.jquery.com/jquery-1.6.4.js'></script>
+<script type='text/javascript' src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css">
+<script src="cordova.js"></script>
+
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
+
+<script>
+    $(document).ready(function() {
+        $("#start").click(function(){
+            window.location="start.html";
+        });
+    });
+    $(document).ready(function() {
+        $("#cancle").click(function(){
+        });
+    });
+</script>
+
+</head>
+
+
+
+<body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>Quiz</h1>
+            </div><!-- /header -->
+                    <div data-role="content" >   
+                               <h2>Welcome User</h2>
+                                <button data-theme="b" id="start" type="submit">Start</button>
+                                <button data-theme="b" id="cancle" type="submit">Cancle</button>
+                                </form>
+                    </div><!-- /content -->
+                    <div id="footer" data-role="footer">
+                        <h4>Copyright &copy; Lambton</h4>
+                    </div><!-- /footer -->
+                    
+        </div><!-- /page -->
+</body>
+</html>
